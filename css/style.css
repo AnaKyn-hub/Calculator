@@ -1,35 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Josefin+Sans&display=swap');
 
 body{
-    background-color: #000000;
+    background-color: #000000da;
 }
 
 main{
-    width: 500px;
-    height: 500px;
+    width: 420px;
+    height: 470px;
     margin: 0 auto;
-    /*outline: 4px solid #c9c9c9;
-    outline-offset: 2px;
-    border-radius: 24px;*/
+    box-shadow: 0px 0px 15px 4px #000000;
+    border-radius: 35px;
+    background-color: #222a2c;
 }
 
 .calculatorBody h3{
-    color: rgb(255, 230, 0);
+    color: #19aec2;
     font-family: 'Chango', cursive;
     font-size: 35px;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 17px;
     height: 35px;
 }
 
+#value img{
+    width: 50px;
+    height: 40px;
+    margin-left: 296px;
+    padding-top: 3px;
+    filter: brightness(140%);
+}
+
 #value{
-    width: 350px;
-    height: 50px;
+    width: 280px;
+    height: 47px;
     margin-top: 0px;
-    margin: 0 auto;
-    outline: 4px solid #c9c9c9;
+    margin-left: 38px;
+    outline: 4px solid #dfdfdf;
     outline-offset: 2px;
-    border-radius: 24px;
+    border-radius: 13px;
 }
 
 #buttons{
@@ -40,16 +48,31 @@ main{
 
 .btn{
     width: 80px;
-    height: 80px;
+    height: 60px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
     border-radius: 24px;
     text-align: center;
     margin: 4px;
-    
+    background-color: #0e8797;
+    color: #dfdfdf;
 }
 
 #bless{font-weight: bold;}
 #bdiv{font-weight: bold;}
 #bx{font-weight: bold;}
 #bplus{font-weight: bold;}
+
+@keyframes delAnim {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
