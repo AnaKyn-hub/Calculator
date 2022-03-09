@@ -25,9 +25,9 @@ main{
 #value img{
     width: 50px;
     height: 40px;
-    margin-left: 296px;
-    padding-top: 3px;
+    margin-left: 294px;
     filter: brightness(140%);
+    padding-top: 5px;
 }
 
 #value{
@@ -38,6 +38,14 @@ main{
     outline: 4px solid #dfdfdf;
     outline-offset: 2px;
     border-radius: 13px;
+}
+
+#numb{
+    margin-top: -45px;
+    margin-left: 250px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #buttons{
