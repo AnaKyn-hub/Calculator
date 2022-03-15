@@ -22,18 +22,10 @@ main{
     height: 35px;
 }
 
-#value img{
-    width: 50px;
-    height: 40px;
-    margin-left: 294px;
-    filter: brightness(140%);
-    padding-top: 5px;
-}
-
-#value{
+#text{
+    display: inline-block;
     width: 280px;
-    height: 47px;
-    margin-top: 0px;
+    height: 46px;
     margin-left: 38px;
     outline: 4px solid #dfdfdf;
     outline-offset: 2px;
@@ -41,12 +33,26 @@ main{
 }
 
 #numb{
-    margin-top: -45px;
+    margin: 0 auto;
     margin-left: 250px;
+    padding-top: 6px;
     font-size: 40px;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+#image{
+    display: inline-block;
+}
+
+#image img{
+    width: 50px;
+    height: 40px;
+    padding-top: 6px;
+    margin-left: 10px;
+    filter: brightness(140%);
+}
+
 
 #buttons{
     margin: 0 auto;
