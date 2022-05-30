@@ -1,29 +1,13 @@
-var val = document.getElementById("numb");
+var val = document.getElementById("value");
 const div = document.getElementById("del");
 
 function deleted(){
     div.style.animation = "";
-    setTimeout(() => div.style.animation = "delAnim 0.2s linear");
-    val.innerHTML = null;
+    setTimeout(() => div.style.animation = "delAnim 0.2s reverse");
 }
 
-var one = document.getElementById("b1");
-var two = document.getElementById("b2");
-var three = document.getElementById("b3");
-var plus = document.getElementById("bplus");
-
-one.onclick = function(){
-    val.append("1");
+function test(){
+    val.innerHTML = "1+1";
 }
 
-two.onclick = function(){
-    val.append("2");
-}
-
-three.onclick = function(){
-    val.append("3");
-}
-
-plus.onclick = function(){
-    val.append("+");
-}
+test();
