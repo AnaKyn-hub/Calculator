@@ -57,6 +57,18 @@ main{
     background-color: #0e8797;
     color: #dfdfdf;
 }
+.btn{
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.btn:active{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
 
 #bless{font-weight: bold;}
 #bdiv{font-weight: bold;}
