@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Josefin+Sans&display=swap');
 
+*{
+    margin: 0;
+}
+
 body{
-    background-color: #000000da;
+    background-color: #01181b;
 }
 
 main{
     width: 420px;
     height: 470px;
     margin: 0 auto;
+    margin-top: 50px;
     box-shadow: 0px 0px 15px 4px #000000;
     border-radius: 35px;
-    background-color: #222a2c;
+    background-color: #023e46e5;
 }
 
 .calculatorBody h3{
@@ -22,42 +27,53 @@ main{
     height: 35px;
 }
 
-#value img{
+img{
     width: 50px;
     height: 40px;
-    margin-left: 296px;
-    padding-top: 3px;
+    margin-left: 10px;
     filter: brightness(140%);
 }
 
-#value{
+#answer{
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+#box{
     width: 280px;
-    height: 47px;
-    margin-top: 0px;
-    margin-left: 38px;
+    height: 50px;
     outline: 4px solid #dfdfdf;
     outline-offset: 2px;
     border-radius: 13px;
 }
 
+#value{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 5px;
+}
+
 #buttons{
     margin: 0 auto;
-    text-align: center;
-    padding-top: 30px;
+    margin-top: 20px;
 }
 
 .btn{
+    background-color: #0e8797;
     width: 80px;
     height: 60px;
+    margin: 4px;
+    border-radius: 24px;
+    /*font*/
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
-    border-radius: 24px;
-    text-align: center;
-    margin: 4px;
-    background-color: #0e8797;
     color: #dfdfdf;
-}
-.btn{
+    /*button effects*/
     border-top: 1px solid white;
     border-left: 1px solid white;
     border-bottom: 1px solid black;
@@ -70,11 +86,13 @@ main{
     border-right: 1px solid white;
 }
 
+/*button adjustments*/
 #bless{font-weight: bold;}
 #bdiv{font-weight: bold;}
 #bx{font-weight: bold;}
 #bplus{font-weight: bold;}
 
+/*delete button animation*/
 @keyframes delAnim {
     0% {
       transform: scale(1);

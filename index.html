@@ -8,33 +8,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Calculator</title>
+        <title>CALCULATOR</title>
     </head>
     <body>
         <main>
             <div class="calculatorBody" id="calculatorBody">
                 <h3>CALCULATOR</h3>
-                <div id="value">
-                    <img id="del" src="image/delete.png" onclick="deleted()">
-                </div>
-                <div id="buttons">
-                    <button type="button" id="b7" class="btn">7</button>
-                    <button type="button" id="b8" class="btn">8</button>
-                    <button type="button" id="b9" class="btn">9</button>
-                    <button type="button" id="bdiv" class="btn">&divide;</button><br>
-                    <button type="button" id="b4" class="btn">4</button>
-                    <button type="button" id="b5" class="btn">5</button>
-                    <button type="button" id="b6" class="btn">6</button>
-                    <button type="button" id="bx" class="btn">&times;</button><br>
-                    <button type="button" id="b1" class="btn">1</button>
-                    <button type="button" id="b2" class="btn">2</button>
-                    <button type="button" id="b3" class="btn">3</button>
-                    <button type="button" id="bless" class="btn">&minus;</button><br>
-                    <button type="button" id="b0" class="btn">0</button>
-                    <button type="button" id="bdot" class="btn">&bullet;</button>
-                    <button type="button" id="bequal" class="btn">=</button>
-                    <button type="button" id="bplus" class="btn">+</button>
-                </div>
+                <table id="answer">
+                    <tr>
+                        <td><div id="box"><p id="value"></p></div></td>
+                        <td><img id="del" src="image/delete.png" onclick="deleted()"></td>
+                    </tr>
+                </table>
+                <table id="buttons">
+                    <tr>
+                        <td><button type="button" class="btn" >7</button></td>
+                        <td><button type="button" class="btn" >8</button></td>
+                        <td><button type="button" class="btn" >9</button></td>
+                        <td><button type="button" class="btn" id="bdiv">&divide;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn" >4</button></td>
+                        <td><button type="button" class="btn" >5</button></td>
+                        <td><button type="button" class="btn" >6</button></td>
+                        <td><button type="button" class="btn" id="bx">&times;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn" >1</button></td>
+                        <td><button type="button" class="btn" >2</button></td>
+                        <td><button type="button" class="btn" >3</button></td>
+                        <td><button type="button" class="btn" id="bless">&minus;</button></td>
+                    </tr>
+                    <tr>
+                        <!--<td colspan="2"><button type="button" class="btn" style="width: 172px;" id="b0">0</button></td>-->
+                        <td><button type="button" class="btn" >0</button></td>
+                        <td><button type="button" class="btn" >&bullet;</button></td>
+                        <td><button type="button" class="btn" >=</button></td>
+                        <td><button type="button" class="btn" id="bplus">+</button></td>
+                    </tr>
+                </table>
             </div>
         </main>
         <script src="js/code.js"></script>
