@@ -23,29 +23,29 @@
                 </table>
                 <table id="buttons">
                     <tr>
-                        <td><button type="button" class="btn" >7</button></td>
-                        <td><button type="button" class="btn" >8</button></td>
-                        <td><button type="button" class="btn" >9</button></td>
-                        <td><button type="button" class="btn" id="bdiv">&divide;</button></td>
+                        <td><button type="button" class="btn" onclick="insert(7)">7</button></td>
+                        <td><button type="button" class="btn" onclick="insert(8)">8</button></td>
+                        <td><button type="button" class="btn" onclick="insert(9)">9</button></td>
+                        <td><button type="button" class="btn" onclick="operations('/')" id="bdiv">&divide;</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn" >4</button></td>
-                        <td><button type="button" class="btn" >5</button></td>
-                        <td><button type="button" class="btn" >6</button></td>
-                        <td><button type="button" class="btn" id="bx">&times;</button></td>
+                        <td><button type="button" class="btn" onclick="insert(4)">4</button></td>
+                        <td><button type="button" class="btn" onclick="insert(5)">5</button></td>
+                        <td><button type="button" class="btn" onclick="insert(6)">6</button></td>
+                        <td><button type="button" class="btn" onclick="operations('*')" id="bx">&times;</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn" >1</button></td>
-                        <td><button type="button" class="btn" >2</button></td>
-                        <td><button type="button" class="btn" >3</button></td>
-                        <td><button type="button" class="btn" id="bless">&minus;</button></td>
+                        <td><button type="button" class="btn" onclick="insert(1)">1</button></td>
+                        <td><button type="button" class="btn" onclick="insert(2)">2</button></td>
+                        <td><button type="button" class="btn" onclick="insert(3)">3</button></td>
+                        <td><button type="button" class="btn" onclick="operations('-')" id="bless">&minus;</button></td>
                     </tr>
                     <tr>
                         <!--<td colspan="2"><button type="button" class="btn" style="width: 172px;" id="b0">0</button></td>-->
-                        <td><button type="button" class="btn" >0</button></td>
-                        <td><button type="button" class="btn" >&bullet;</button></td>
+                        <td><button type="button" class="btn" onclick="insert(0)">0</button></td>
+                        <td><button type="button" class="btn" onclick="insert('.')">&bullet;</button></td>
                         <td><button type="button" class="btn" >=</button></td>
-                        <td><button type="button" class="btn" id="bplus">+</button></td>
+                        <td><button type="button" class="btn" onclick="operations('+')" id="bplus">+</button></td>
                     </tr>
                 </table>
             </div>
