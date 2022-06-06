@@ -1,12 +1,17 @@
 const del = document.getElementById("del");
 var opVerif = false;
 
+var a;
+var b;
+var dado;
+
 function deleted(){
     del.style.animation = "";
     setTimeout(() => del.style.animation = "delAnim 0.2s reverse");
 
     document.getElementById('value').innerHTML = "";
 }
+//ele não deleta totalmente vai somando
 
 function insert(num){
     if(opVerif){
@@ -25,29 +30,49 @@ function operations(symb){
 
     opVerif = true;
 
-    switch (symb) {
+    if (a == undefined) {
+        a = parseInt(document.getElementById('value').innerHTML);
+        dado = symb;
+    }
+
+    else{
+        b = parseInt(document.getElementById('value').innerHTML);
+        calculate(dado);
+        dado = symb;
+    }
+}
+
+function calculate(x){
+    switch (x) {
         case '+': 
-            document.getElementById('value').innerHTML + '+';
+            a = a + b;
             console.log("SOMOOOOOO");
         break;
-
+    
         case '-':
-            document.getElementById('value').innerHTML + '-';
+            a = a - b;
             console.log("SUBTRAIIIIIIU");
         break;
-
+    
         case '*':
-            document.getElementById('value').innerHTML + '*';
+            a = a * b;
             console.log("MULTIPLICOOOOOO");
         break;
-
+    
         case '/':
-            document.getElementById('value').innerHTML + '/';
+            a = a / b;
             console.log("DIVIDIIIIIU");
         break;
     }
 }
+//ele não sabe que vezes e divisão vem antes de soma e subtração
 
 function resultado(){
-
+    b = parseInt(document.getElementById('value').innerHTML);
+    calculate(dado);
+    document.getElementById('value').innerHTML = a;
 }
+//ele não deleta totalmente vai somando
+//aviso para fazer uma operação por vez, ele opera na ordem que é escrito
+//adicionar um histórico da operação anterior
+//resolver bugs preenche com 0, etc
