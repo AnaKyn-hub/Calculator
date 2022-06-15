@@ -11,7 +11,6 @@ function deleted(){
 
     document.getElementById('value').innerHTML = "";
 }
-//ele não deleta totalmente vai somando
 
 function insert(num){
     if(opVerif){
@@ -65,14 +64,21 @@ function calculate(x){
         break;
     }
 }
-//ele não sabe que vezes e divisão vem antes de soma e subtração
 
 function resultado(){
     b = parseInt(document.getElementById('value').innerHTML);
     calculate(dado);
+
     document.getElementById('value').innerHTML = a;
+    opVerif = true;
+
+    if(a == undefined){
+        document.getElementById('value').innerHTML = "";
+    }
 }
+
 //ele não deleta totalmente vai somando
 //aviso para fazer uma operação por vez, ele opera na ordem que é escrito
 //adicionar um histórico da operação anterior
 //resolver bugs preenche com 0, etc
+//adicionar o ponto é uma vez
