@@ -1,3 +1,3 @@
 # Calculator
 
-🚧 <i>Projeto em contrução<i/> 🚧
+🚧 <i>Projeto em construção<i/> 🚧
